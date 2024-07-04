@@ -1,6 +1,8 @@
 package Desafio05;
 
 public interface Calculavel {
-    double calcularPrecoFinal();
+    double taxaAdicional = 15;
+
+    double calcularPrecoFinal(double valor);
 
 }
