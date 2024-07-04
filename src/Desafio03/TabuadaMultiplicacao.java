@@ -4,8 +4,15 @@ package Desafio03;
 
 public class TabuadaMultiplicacao implements Tabuada {
     @Override
-    public int mostrarTabuada(int numero) {
-        return 0;
+    public void mostrarTabuada(int numero) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numero * i);
+        }
     }
 
+    public static void main(String[] args) {
+        TabuadaMultiplicacao operacao = new TabuadaMultiplicacao();
+
+       operacao.mostrarTabuada(7);
+    }
 }
