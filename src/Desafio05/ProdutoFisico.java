@@ -1,7 +1,5 @@
 package Desafio05;
 
-import java.util.function.Predicate;
-
 public class ProdutoFisico implements Calculavel {
     @Override
     public double calcularPrecoFinal(double valor) {
