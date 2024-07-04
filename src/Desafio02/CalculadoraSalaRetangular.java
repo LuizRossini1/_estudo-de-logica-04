@@ -4,14 +4,22 @@ A classe deve receber altura e largura como parâmetros. */
 package Desafio02;
 
 public class CalculadoraSalaRetangular implements CalculoGeometrico {
-
     @Override
-    public void calcularArea() {
-
+    public int calcularArea(int altura, int largura) {
+        int area = largura * altura;
+        return area;
     }
 
     @Override
-    public void calcularPerimetro() {
+    public int calcularPerimetro(int altura, int largura) {
+        int perimetro = 2 * (largura + altura);
+        return perimetro;
+    }
 
+    public static void main(String[] args) {
+        CalculadoraSalaRetangular retangulo = new CalculadoraSalaRetangular();
+
+        System.out.println(retangulo.calcularArea(2,3));
+        System.out.println(retangulo.calcularPerimetro(7,10));
     }
 }

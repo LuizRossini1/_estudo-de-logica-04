@@ -1,7 +1,7 @@
 package Desafio02;
 
 public interface CalculoGeometrico {
-    void calcularArea();
-    void calcularPerimetro();
+    int calcularArea(int altura, int largura);
+    int calcularPerimetro(int altura, int largura);
 
 }
