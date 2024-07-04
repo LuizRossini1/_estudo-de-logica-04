@@ -5,13 +5,23 @@ package Desafio04;
 
 public class ConversorTemperaturaPadrao implements ConversorTemperatura {
     @Override
-    public void celsiusParaFahrenheit() {
+    public double celsiusParaFahrenheit(double celsius) {
+        double resultado = (celsius * 1.8) + 32;
+        return resultado;
 
     }
 
     @Override
-    public void fahrenheitParaCelsius() {
+    public double fahrenheitParaCelsius(double fahrenheit) {
+        return 0;
 
     }
 
+    public static void main(String[] args) {
+        ConversorTemperaturaPadrao celParaFah = new ConversorTemperaturaPadrao();
+
+        System.out.println(celParaFah.celsiusParaFahrenheit(15));
+        System.out.println(celParaFah.celsiusParaFahrenheit(30));
+
+    }
 }

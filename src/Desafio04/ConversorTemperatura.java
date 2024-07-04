@@ -1,7 +1,7 @@
 package Desafio04;
 
 public interface ConversorTemperatura {
-    void celsiusParaFahrenheit();
-    void fahrenheitParaCelsius();
+    double celsiusParaFahrenheit(double celsius);
+    double fahrenheitParaCelsius(double fahrenheit);
 
 }
